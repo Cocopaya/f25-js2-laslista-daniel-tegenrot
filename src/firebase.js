@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCOL98yiPvqYCuRhg6OR16SydGF-zxUjx4",
+  apiKey: import.meta.env.BOOKS_API_KEY,
   authDomain: "book-app-5d9bc.firebaseapp.com",
   databaseURL:
     "https://book-app-5d9bc-default-rtdb.europe-west1.firebasedatabase.app",
