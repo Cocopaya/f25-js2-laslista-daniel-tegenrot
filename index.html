@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book-app</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Böcker jag vill läsa</h1>
+      <h2>Lägg till en ny bok</h2>
+      <form id="bookForm">
+        <label>Titel</label>
+        <input type="text" id="titleInput" />
+        <label>Författare</label>
+        <input type="text" id="authorInput" />
+        <button type="submit">Lägg till bok</button>
+      </form>
+      <h2>Din lista</h2>
+      <form id="filerForm">
+        <label for="filter-favorites">Visa endast favoriter</label>
+        <input name="filter-favorites" id="filterFavorites" type="checkbox" />
+        <label for="sort-select">Sortera böcker efter:</label>
+        <select name="sort-select" id="sortSelect">
+          <option>Boktitel (a-ö)</option>
+          <option>Boktitel (ö-a)</option>
+          <option>Författare (a-ö)</option>
+          <option>Författare (ö-a)</option>
+          <option>Tillagd först</option>
+          <option>Tillagd sist</option>
+        </select>
+      </form>
+      <ul id="bookList"></ul>
+    </div>
+  </body>
+</html>
